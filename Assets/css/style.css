@@ -285,9 +285,15 @@ body {
   position: relative;
 }
 
+
+
 @media (max-width: 768px) {
   .belief-intro {
     min-height: 50vh
+  }
+  .belief-intro #scene {
+    width: 75vw;
+    height: 40vh;
   }
 }
 

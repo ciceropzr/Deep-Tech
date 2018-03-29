@@ -23,46 +23,6 @@
 	--blend-color-5: #1c1cc9;
 }
 
-.borboleta-toggle {
-	animation-duration: 5s;
-	animation-delay: var(--delay-anim);
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	background-color: var(--blend-color-2);
-	background-blend-mode: var(--blend-mode-2);
-	animation-name: borboleta-anim-toggle;
-	animation-direction: alternate;
-}
-
-.borboleto-toggle {
-	animation-duration: 5s;
-	animation-delay: var(--delay-anim);
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	background-color: var(--blend-color-2);
-	background-blend-mode: var(--blend-mode-2);
-	animation-name: borboleto-anim-toggle;
-	animation-direction: alternate;
-}
-@keyframes borboleta-anim-toggle {
-	0%, 43%, 50% { 
-		opacity: 0; 
-	}
-	45%, 53%, 100% {
-		opacity: 1;
-	}
-}
-
-@keyframes borboleto-anim-toggle {
-	0%, 43%, 50% { 
-		opacity: 1; 
-	}
-	45%, 53%, 100% {
-		opacity: 0;
-	}
-}
-
-
 .content__title {
 	font-size: 11vw;
 	margin: 35vh 0 0 0;
