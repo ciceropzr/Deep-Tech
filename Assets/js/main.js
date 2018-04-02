@@ -58,5 +58,6 @@
 
   function myFunction2() {
     menuList.classList.remove('--drop-menu')
+    socialIcon.classList.toggle('--drop-social')
   };
 })();
