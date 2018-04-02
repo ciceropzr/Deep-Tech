@@ -33,7 +33,7 @@ body {
 
 @media (max-width: 768px) {
   .header {
-    width: 110vw;
+    width: 100vw;
   }
 }
 
@@ -46,18 +46,19 @@ body {
   transition: all 0.25s ease-in;
 }
 
+@media (max-width: 768px) {
+  .header-container {
+    background-color: rgba( 256, 256, 256, .8);
+    width: 100vw
+  }
+}
+
 .fade-in {
   opacity: 1;
 }
 
 .hidden {
   opacity: 0;
-}
-
-@media (max-width: 768px) {
-  .header-container {
-  background-color: rgba( 256, 256, 256, .8);
-  }
 }
 
 .header-logobox {
@@ -633,7 +634,6 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  z-index: 2;
 }
 
 .contact-box {
