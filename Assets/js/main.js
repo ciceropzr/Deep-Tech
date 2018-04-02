@@ -43,7 +43,10 @@
   var socialIcon = document.querySelector('.header-social')
 
   document.getElementById("menu-icon-mobile").addEventListener("click", myFunction);
-  document.getElementById("menu-item").addEventListener("click", myFunction2);  
+  document.getElementById("menu-item").addEventListener("click", myFunction2);
+  document.getElementById("menu-item2").addEventListener("click", myFunction2);
+  document.getElementById("menu-item3").addEventListener("click", myFunction2);
+  document.getElementById("menu-item4").addEventListener("click", myFunction2); 
 
   function myFunction() {
     menuList.classList.toggle('--drop-menu')
@@ -55,9 +58,5 @@
 
   function myFunction2() {
     menuList.classList.remove('--drop-menu')
-    socialIcon.classList.remove('--drop-social')
-    menuItem.forEach((element) => { 
-      element.classList.remove('--drop-menu')
-    });
   };
 })();
