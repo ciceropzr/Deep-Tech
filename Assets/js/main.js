@@ -37,4 +37,27 @@
       }
     }
   };
+
+  var menuItem = document.querySelectorAll('.menu-item');
+  var menuList = document.querySelector('.menu-list');
+  var socialIcon = document.querySelector('.header-social')
+
+  document.getElementById("menu-icon-mobile").addEventListener("click", myFunction);
+  document.getElementById("menu-item").addEventListener("click", myFunction2);  
+
+  function myFunction() {
+    menuList.classList.toggle('--drop-menu')
+    socialIcon.classList.add('--drop-social')
+    menuItem.forEach((element) => {
+      element.classList.add('--drop-item')
+    });
+  }
+
+  function myFunction2() {
+    menuList.classList.remove('--drop-menu')
+    socialIcon.classList.remove('--drop-social')
+    menuItem.forEach((element) => { 
+      element.classList.remove('--drop-menu')
+    });
+  };
 })();
