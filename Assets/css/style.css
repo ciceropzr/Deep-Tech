@@ -21,7 +21,6 @@ body {
 }
 
 /*  Header  */
-
 .header {
   position: fixed;
   z-index: 1;
@@ -429,7 +428,6 @@ body {
   }
 }
 
-
 .cases-img {
   width: 100%;
 }
@@ -441,11 +439,28 @@ body {
   font-weight: 700;
 }
 
+.box2 {
+  display: none;
+}
+
+.box2 .--drop-cases {
+  display: block;
+}
+
 .cases-show {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.125rem;
   position: absolute;
-  bottom: 0
+  bottom: 7vh;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  border-top: solid 1px;
+  padding-top: 19px;
+}
+
+.down {
+  display: none;
 }
 
 /*  Services    */

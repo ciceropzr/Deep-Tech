@@ -40,13 +40,16 @@
 
   var menuItem = document.querySelectorAll('.menu-item');
   var menuList = document.querySelector('.menu-list');
-  var socialIcon = document.querySelector('.header-social')
+  var socialIcon = document.querySelector('.header-social');
+  var cases2 = document.querySelector('.box2');
+  var casespan = document.querySelector('.cases-show')
 
   document.getElementById("menu-icon-mobile").addEventListener("click", myFunction);
   document.getElementById("menu-item").addEventListener("click", myFunction2);
   document.getElementById("menu-item2").addEventListener("click", myFunction2);
   document.getElementById("menu-item3").addEventListener("click", myFunction2);
-  document.getElementById("menu-item4").addEventListener("click", myFunction2); 
+  document.getElementById("menu-item4").addEventListener("click", myFunction2);
+  document.getElementById("cases-show").addEventListener("click", showcases);
 
   function myFunction() {
     menuList.classList.toggle('--drop-menu')
@@ -59,5 +62,12 @@
   function myFunction2() {
     menuList.classList.remove('--drop-menu')
     socialIcon.classList.toggle('--drop-social')
+  };
+
+  function showcases() {
+    cases2.classList.toggle('--drop-cases')
+    cases2.classList.toggle('box2')
+    casespan.classList.add('down')
+    casespan.classList.remove('cases-show')
   };
 })();
