@@ -43,11 +43,12 @@ body {
   z-index: 35;
   opacity: 0;
   transition: all 0.25s ease-in;
+  background-color: rgba( 256, 256, 256, .8);
+  height: 75px;
 }
 
 @media (max-width: 768px) {
   .header-container {
-    background-color: rgba( 256, 256, 256, .8);
     width: 100vw;
   }
 }
@@ -443,8 +444,18 @@ body {
   display: none;
 }
 
-.box2 .--drop-cases {
-  display: block;
+.cases-box.--drop-cases {
+  display: flex;
+  animation: box 1s ease-out; 
+}
+
+@keyframes box {
+ 0% {
+  opacity: 0;
+ } 
+ 100% {
+  opacity: 1
+ }
 }
 
 .cases-show {
