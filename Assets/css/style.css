@@ -50,6 +50,7 @@ body {
 @media (max-width: 768px) {
   .header-container {
     width: 100vw;
+    height: 50px;
   }
 }
 
@@ -447,6 +448,7 @@ body {
 .cases-box.--drop-cases {
   display: flex;
   animation: box 1s ease-out; 
+  margin-top: 0;
 }
 
 @keyframes box {
