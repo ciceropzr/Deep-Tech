@@ -141,9 +141,16 @@ body {
   margin-right: 20px; 
 }
 
+@media ( max-width: 1400px) {
+  .menu-item {
+    margin-right: 25px
+  }
+}
+
 @media (max-width: 768px) {
   .menu-item {
     display: none;
+    margin-right: 25px; 
   }
 
   .menu-item.--drop-item {
