@@ -82,26 +82,31 @@
 
   function case1() { 
     modal.classList.toggle('modal-show')
+    modal.classList.toggle('modal-case1')
     modalCont.style.display="block"
   };
 
   function case2() { 
     modal.classList.toggle('modal-show')
+    modal.classList.toggle('modal-case2')
     modalCont.style.display="block"
   };
 
   function case3() { 
     modal.classList.toggle('modal-show')
+    modal.classList.toggle('modal-case3')
     modalCont.style.display="block"
   };
 
   function case4() { 
     modal.classList.toggle('modal-show')
+    modal.classList.toggle('modal-case4')
     modalCont.style.display="block"
   };
 
   function case5() { 
     modal.classList.toggle('modal-show')
+    modal.classList.toggle('modal-case5')
     modalCont.style.display="block"
   };
 

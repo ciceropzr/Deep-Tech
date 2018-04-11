@@ -484,32 +484,40 @@ body {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 100; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100vw; /* Full width */
-  height: 100vh; /* Full height */
-  overflow: hidden; /* Enable scroll if needed */
-  filter: blur(2px);
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none;
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background-size:cover;
+  z-index:1;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
 }
+
+.modal-case1 {background-image: url('../img/case-bluetooth.jpg')}
+.modal-case2 {background-image: url('../img/case-robo.jpg')}
+.modal-case3 {background-image: url('../img/case-vnw.jpg')}
+.modal-case4 {background-image: url('../img/case-ai_evasao.jpg')}
+.modal-case5 {background-image: url('../img/case-startupin_favelas.jpg')}
 
 .modal-show {
   display: block;
 }
 
 .modal-content {
+  position:fixed;
+  top: 40vh;
+  z-index:2;
+  background-color:rgba(256, 256, 256, .6);
   display: none;
-  background-color: #fff;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
   width: 50%;
-  position: fixed;
-  z-index: 1;
 }
 
 .close {
