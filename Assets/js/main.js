@@ -82,31 +82,31 @@
 
   function case1() { 
     modal.classList.toggle('modal-show')
-    modal.classList.toggle('modal-case1')
+    modal.classList.add('modal-case1')
     modalCont.style.display="block"
   };
 
   function case2() { 
     modal.classList.toggle('modal-show')
-    modal.classList.toggle('modal-case2')
+    modal.classList.add('modal-case2')
     modalCont.style.display="block"
   };
 
   function case3() { 
     modal.classList.toggle('modal-show')
-    modal.classList.toggle('modal-case3')
+    modal.classList.add('modal-case3')
     modalCont.style.display="block"
   };
 
   function case4() { 
     modal.classList.toggle('modal-show')
-    modal.classList.toggle('modal-case4')
+    modal.classList.add('modal-case4')
     modalCont.style.display="block"
   };
 
   function case5() { 
     modal.classList.toggle('modal-show')
-    modal.classList.toggle('modal-case5')
+    modal.classList.add('modal-case5')
     modalCont.style.display="block"
   };
 
@@ -117,12 +117,22 @@
   span.onclick = function() {
       modal.classList.remove('modal-show')
       modalCont.style.display="none"
+      modal.classList.remove('modal-case1')
+      modal.classList.remove('modal-case2')
+      modal.classList.remove('modal-case3')
+      modal.classList.remove('modal-case4')
+      modal.classList.remove('modal-case5')
   }
 
   window.onclick = function(event) {
       if (event.target == modal) {
           modal.classList.remove('modal-show');
           modalCont.style.display="none"
+                modal.classList.remove('modal-case1')
+          modal.classList.remove('modal-case2')
+          modal.classList.remove('modal-case3')
+          modal.classList.remove('modal-case4')
+          modal.classList.remove('modal-case5')
       }
   };
 })();
