@@ -43,6 +43,9 @@
   var socialIcon = document.querySelector('.header-social');
   var cases2 = document.querySelector('.box2');
   var casespan = document.querySelector('.cases-show')
+  var modal = document.querySelector('.modal');  // Get the modal
+  var modalCont = document.querySelector('.modal-content');
+  var span = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
 
   document.getElementById("menu-icon-mobile").addEventListener("click", myFunction);
   document.getElementById("menu-item").addEventListener("click", myFunction2);
@@ -50,6 +53,12 @@
   document.getElementById("menu-item3").addEventListener("click", myFunction2);
   document.getElementById("menu-item4").addEventListener("click", myFunction2);
   document.getElementById("cases-show").addEventListener("click", showcases);
+  document.getElementById("case1").addEventListener("click", case1);
+  document.getElementById("case2").addEventListener("click", case2);
+  document.getElementById("case3").addEventListener("click", case3);
+  document.getElementById("case4").addEventListener("click", case4);
+  document.getElementById("case5").addEventListener("click", case5);
+  // document.getElementById("case6").addEventListener("click", case6);
 
   function myFunction() {
     menuList.classList.toggle('--drop-menu')
@@ -71,26 +80,44 @@
     casespan.classList.remove('cases-show')
   };
 
+  function case1() { 
+    modal.classList.toggle('modal-show')
+    modalCont.style.display="block"
+  };
 
-  var modal = document.getElementById('myModal');  // Get the modal
-  var btn = document.getElementById("myBtn");   // Get the button that opens the modal
-  var span = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
+  function case2() { 
+    modal.classList.toggle('modal-show')
+    modalCont.style.display="block"
+  };
 
-  
-  // When the user clicks the button, open the modal 
-  btn.onclick = function() {
-      modal.classList.toggle('modal-show');
-  }
+  function case3() { 
+    modal.classList.toggle('modal-show')
+    modalCont.style.display="block"
+  };
 
-  // When the user clicks on <span> (x), close the modal
+  function case4() { 
+    modal.classList.toggle('modal-show')
+    modalCont.style.display="block"
+  };
+
+  function case5() { 
+    modal.classList.toggle('modal-show')
+    modalCont.style.display="block"
+  };
+
+  // function case6() { 
+  //   modal.classList.toggle('modal-show')
+  // };
+
   span.onclick = function() {
-      modal.classList.toggle('modal-show')
+      modal.classList.remove('modal-show')
+      modalCont.style.display="none"
   }
 
-  // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
       if (event.target == modal) {
           modal.classList.remove('modal-show');
+          modalCont.style.display="none"
       }
   };
 })();
