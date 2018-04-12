@@ -311,11 +311,8 @@ body {
   position: absolute;
   bottom: 40px;
   left: 14vw;
-  animation: mymove .5s infinite;
+  animation: mymove 1s infinite;
   z-index: 1;
-}
-
-.home-span {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.125rem;
   color: black;
