@@ -479,8 +479,8 @@ body {
 .cases-text {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.125rem;
-  line-height: 36px;
-  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 2px;
 }
 
 .cases-hashtags {
