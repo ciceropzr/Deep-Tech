@@ -42,7 +42,7 @@
   var menuList = document.querySelector('.menu-list');
   var socialIcon = document.querySelector('.header-social');
   var cases2 = document.querySelector('.box2');
-  var casespan = document.querySelector('.cases-show')
+  // var casespan = document.querySelector('.cases-show')
   var modal = document.querySelector('.modal');  // Get the modal
   var modalCont = document.querySelector('.modal-content');
   var span = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
@@ -52,13 +52,13 @@
   document.getElementById("menu-item2").addEventListener("click", myFunction2);
   document.getElementById("menu-item3").addEventListener("click", myFunction2);
   document.getElementById("menu-item4").addEventListener("click", myFunction2);
-  document.getElementById("cases-show").addEventListener("click", showcases);
+  // document.getElementById("cases-show").addEventListener("click", showcases);
   document.getElementById("case1").addEventListener("click", case1);
   document.getElementById("case2").addEventListener("click", case2);
   document.getElementById("case3").addEventListener("click", case3);
   document.getElementById("case4").addEventListener("click", case4);
   document.getElementById("case5").addEventListener("click", case5);
-  // document.getElementById("case6").addEventListener("click", case6);
+  document.getElementById("case6").addEventListener("click", case6);
 
   function myFunction() {
     menuList.classList.toggle('--drop-menu')
@@ -73,12 +73,12 @@
     socialIcon.classList.toggle('--drop-social')
   };
 
-  function showcases() {
-    cases2.classList.toggle('--drop-cases')
-    cases2.classList.toggle('box2')
-    casespan.classList.add('down')
-    casespan.classList.remove('cases-show')
-  };
+  // function showcases() {
+  //   cases2.classList.toggle('--drop-cases')
+  //   cases2.classList.toggle('box2')
+  //   casespan.classList.add('down')
+  //   casespan.classList.remove('cases-show')
+  // };
 
   function case1() { 
     modal.classList.toggle('modal-show')
@@ -110,9 +110,11 @@
     modalCont.style.display="block"
   };
 
-  // function case6() { 
-  //   modal.classList.toggle('modal-show')
-  // };
+  function case6() { 
+    modal.classList.toggle('modal-show')
+    modal.classList.add('modal-case6')
+    modalCont.style.display="block"
+  };
 
   span.onclick = function() {
       modal.classList.remove('modal-show')
@@ -122,17 +124,19 @@
       modal.classList.remove('modal-case3')
       modal.classList.remove('modal-case4')
       modal.classList.remove('modal-case5')
+      modal.classList.remove('modal-case6')
   }
 
   window.onclick = function(event) {
       if (event.target == modal) {
           modal.classList.remove('modal-show');
           modalCont.style.display="none"
-                modal.classList.remove('modal-case1')
+          modal.classList.remove('modal-case1')
           modal.classList.remove('modal-case2')
           modal.classList.remove('modal-case3')
           modal.classList.remove('modal-case4')
           modal.classList.remove('modal-case5')
+          modal.classList.remove('modal-case6')
       }
   };
 })();

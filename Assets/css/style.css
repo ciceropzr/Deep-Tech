@@ -308,11 +308,17 @@ body {
 }
 
 .home-span {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.125rem;
   position: absolute;
   bottom: 40px;
   left: 14vw;
+  animation: mymove .5s infinite;
+  z-index: 1;
+}
+
+.home-span {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.125rem;
+  color: black;
 }
 
 @media (max-width: 768px) {
@@ -320,8 +326,14 @@ body {
     display: none;
   }
 }
-/*  Belief  */
 
+@keyframes mymove {
+  0% {bottom: 30px;}
+  50% {bottom: 40px}
+  100% {bottom: 30px;}
+}
+
+/*  Belief  */
 .belief .container {
   justify-content: center;
   align-items: center;
@@ -424,12 +436,17 @@ body {
   display: flex;
   justify-content: space-around;
   width: 80vw;
+  margin-bottom: 50px
 }
 
 @media (max-width: 768px) {
   .cases-box {
     flex-direction: column;
     margin-top: 100px;
+  }
+
+  .box2{
+    margin-top: 0
   }
 }
 
@@ -440,6 +457,7 @@ body {
 @media (max-width: 768px) {
   .cases-item {
     width: 80vw;
+    margin: 20px 0;
   }
 }
 
@@ -454,23 +472,10 @@ body {
   font-weight: 700;
 }
 
-.box2 {
-  display: none;
-}
-
-.cases-box.--drop-cases {
-  display: flex;
-  animation: box 1s ease-out; 
-  margin-top: 0;
-}
-
-@keyframes box {
- 0% {
-  opacity: 0;
- } 
- 100% {
-  opacity: 1
- }
+.cases-hashtags {
+  font-family: SkyhookMonoBold;
+  font-size: 1rem;
+  color: rgba(0, 200, 219, 1);
 }
 
 .cases-show {
@@ -487,12 +492,6 @@ body {
 
 .down {
   display: none;
-}
-
-.case-none {opacity: 0} 
-@media (max-width: 768px) { 
-  .case-none { display: none; } 
-  .cases-show { bottom: 0; }
 }
 
 /* The Modal (background) */
@@ -517,25 +516,27 @@ body {
 .modal-case3 {background-image: url('../img/case-vnw.jpg')}
 .modal-case4 {background-image: url('../img/case-ai_evasao.jpg')}
 .modal-case5 {background-image: url('../img/case-startupin_favelas.jpg')}
+.modal-case6 {background-image: url('../img/case-k360.jpg')}
 
 .modal-show {
   display: block;
 }
 
 .modal-content {
+  display: none;
+  z-index:2;
   position:fixed;
   top: 40vh;
-  z-index:2;
-  display: none;
   margin: auto;
-  padding: 20px;
+  padding: 10px 20px;
+  background-color: rgba(256, 256, 256, .6);
   width: 40%;
   min-width: 300px;
 }
 
 .modal-content p {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.725rem;
+  font-size: 1.5rem;
   font-weight: 900;
 }
 
