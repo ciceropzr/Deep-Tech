@@ -609,6 +609,12 @@ body {
   margin-top: 100px;
 }
 
+@media ( max-width: 768px) {
+  .services-text {
+    margin-top: 50px;
+  }
+}
+
 .services-box {
   display: flex;
   flex-direction: column;
@@ -697,6 +703,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .box-startupin {
+    margin-top: 75px;
+  }
+
   .box-startupin-subtitle,
   .box-social-subtitle,
   .box-bios-subtitle,
