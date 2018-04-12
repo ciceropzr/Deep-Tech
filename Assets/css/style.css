@@ -421,6 +421,12 @@ body {
   padding-top: 60px;  
 }
 
+@media ( max-width: 768px) {
+  .cases .container{
+    padding-bottom: 0
+  }
+}
+
 .cases-span {
   font-family: SkyhookMonoRegular;
   font-size: 1rem;
@@ -453,11 +459,15 @@ body {
 @media (max-width: 768px) {
   .cases-box {
     flex-direction: column;
-    margin-top: 100px;
+    margin-bottom: 0;
   }
 
   .box2{
     margin-top: 0
+  }
+
+  .cases-title {
+    margin-bottom: 50px
   }
 }
 
@@ -618,6 +628,7 @@ body {
 @media ( max-width: 768px) {
   .services-text {
     margin-top: 50px;
+    margin-bottom: 10px;
   }
 }
 
