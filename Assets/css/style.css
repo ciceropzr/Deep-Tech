@@ -462,7 +462,7 @@ body {
 }
 
 .cases-item {
-  width: 20vw;
+  width: 22vw;
 }
 
 @media (max-width: 768px) {
@@ -612,7 +612,7 @@ body {
   align-self: center;
   width: 70%;
   font-weight: 600;
-  margin-top: 100px;
+  margin: 50px auto 75px auto;
 }
 
 @media ( max-width: 768px) {
@@ -657,7 +657,7 @@ body {
 }
 
 .box-startupin {
-  margin-top: 150px;
+  margin-top: 0px;
 }
 
 .box-startupin-subtitle {
