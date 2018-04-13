@@ -199,10 +199,6 @@ body {
 
 /*  Home  */
 .home {
-  background-image: url("../img/Vista-Aerea.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
