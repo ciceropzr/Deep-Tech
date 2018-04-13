@@ -646,9 +646,17 @@ body {
   margin-top: 100px;
 }
 
-.services-box span {
+.services-box-span {
   padding: 0px 10px 10px;
+  background-size: 0 100%;
+}
+
+.services-box-span:hover {
   background-color: rgb(255, 221, 0);
+  background-size: 100% 100%;
+   transition: all .4s ease-in;
+  -moz-transition: all .4s ease-in;
+  -web-kit-transition: all .4s ease-in
 }
 
 .services-box-subtitle {
