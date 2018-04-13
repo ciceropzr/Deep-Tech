@@ -1,10 +1,10 @@
-.demo-2 {
+:root {
 	--color-text: #aaa;
 	--color-bg: #000;
 	--color-link: #1c1cc9;
 	--color-link-hover: #aaa;
 	--color-info: #1c1cc9;
-	--glitch-width: 99vw;
+	--glitch-width: 100%;
 	--glitch-height: 100vh;
 	--gap-horizontal: 10px;
 	--gap-vertical: 5px;
@@ -23,21 +23,8 @@
 	--blend-color-5: #1c1cc9;
 }
 
-.content__title {
-	font-size: 11vw;
-	margin: 35vh 0 0 0;
-	position: relative;
-	font-family: 'Bungee', cursive;
-	color: var(--color-title);
-	animation-name: glitch-anim-text;
-	animation-duration: var(--time-anim);
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-delay: calc(var(--delay-anim) + var(--time-anim) * 0.2);
-}
-
 /* Glitch styles */
-.glitch {
+.glitch-background {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -46,15 +33,73 @@
 	overflow: hidden;
 }
 
-.glitch__img {
+.glitch-background .glitch__img {
 	position: absolute;
 	top: calc(-1 * var(--gap-vertical));
 	left: calc(-1 * var(--gap-horizontal));
 	width: calc(100% + var(--gap-horizontal) * 2);
 	height: calc(100% + var(--gap-vertical) * 2);
+	background: url(../img/Vista-Aerea.jpg) no-repeat 50% 0;
 	background-color: var(--blend-color-1);
+	background-size: cover;
 	transform: translate3d(0,0,0);
 	background-blend-mode: var(--blend-mode-1);
+}
+
+.glitch-butterfly {
+	position: relative;
+	width: 480px;
+	height: 270px;
+
+	--blend-color-4: transparent;
+	--blend-color-5: transparent;
+}
+
+.glitch-butterfly .glitch__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/Borboleta.png) no-repeat 50% 0;
+	background-color: var(--blend-color-1);
+	background-size: cover;
+	transform: translate3d(0,0,0);
+	background-blend-mode: var(--blend-mode-1);
+}
+
+.glitch-satellite {
+	position: relative;
+	width: 50%;
+	height: 50%;
+	z-index: 1;
+
+	margin-top: -5%;
+
+	--blend-color-4: transparent;
+	--blend-color-5: transparent;
+}
+
+.glitch-satellite .glitch__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/Satelite2.png) no-repeat 50% 0;
+	background-color: var(--blend-color-1);
+	background-size: cover;
+	transform: translate3d(0,0,0);
+	background-blend-mode: var(--blend-mode-1);
+}
+
+.glitch-title,
+.glitch-subtitle {
+	animation-name: glitch-anim-text;
+	animation-duration: var(--time-anim);
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-delay: calc(var(--delay-anim) + var(--time-anim) * 0.2);
 }
 
 .glitch__img:nth-child(n+2) {
@@ -358,4 +403,3 @@
 		transform: translate3d(0, 0, 0);
 	}
 }
-
