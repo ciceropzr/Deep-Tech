@@ -167,7 +167,7 @@ body {
   justify-content: space-between;
   position: fixed;
   right: 20px;
-  top: 65vh;
+  top: 70vh;
 }
 
 @media ( max-width: 1400px) {
@@ -214,7 +214,7 @@ body {
   .home {
     background-position: initial;
     flex-direction: column;
-    padding-top: 50vh;
+    padding-top: 45vh;
   }
 }
 
@@ -233,7 +233,7 @@ body {
   .home-column {
     flex-direction: column;
     width: 100vw;
-    min-height: 50vh;
+    min-height: 55vh;
     position: initial;
   }
 }
@@ -442,7 +442,7 @@ body {
   align-self: center;
   width: 92%;
   font-weight: 600;
-  margin: 75px 0px;
+  margin: 55px 0px 75px 0px;
 }
 
 .cases-box {
@@ -451,9 +451,6 @@ body {
   width: 80vw;
   margin-bottom: 50px;
   position: relative;
-}
-
-.box2 {
 }
 
 @media (max-width: 768px) {
@@ -473,6 +470,7 @@ body {
 
 .cases-item {
   width: 22vw;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -485,6 +483,7 @@ body {
 .cases-img {
   width: 100%;
   transition: transform .5s;
+  box-sizing: border-box; 
 }
 
 .cases-img:hover {
@@ -643,20 +642,12 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 100px;
+  margin-bottom: 100px
 }
 
-.services-box-span {
-  padding: 0px 10px 10px;
-  background-size: 0 100%;
-}
-
-.services-box-span:hover {
-  background-color: rgb(255, 221, 0);
-  background-size: 100% 100%;
-   transition: all .4s ease-in;
-  -moz-transition: all .4s ease-in;
-  -web-kit-transition: all .4s ease-in
+.services-box-span{
+  padding: 0 4px;
+  background-color: rgb(252, 241, 19) ;
 }
 
 .services-box-subtitle {
@@ -681,7 +672,7 @@ body {
 }
 
 .box-startupin {
-  margin-top: 0px;
+  margin-top: 200px;
 }
 
 .box-startupin-subtitle {
@@ -701,6 +692,7 @@ body {
 .box-social {
   align-items: flex-end;
   margin-right: 50px;
+  margin-bottom: 0;
 }
 
 .box-social-subtitle {
