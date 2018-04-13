@@ -484,6 +484,11 @@ body {
 
 .cases-img {
   width: 100%;
+  transition: transform .5s;
+}
+
+.cases-img:hover {
+  transform: scale(1.1);
 }
 
 .cases-text {
