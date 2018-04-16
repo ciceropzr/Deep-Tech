@@ -139,4 +139,50 @@
           modal.classList.remove('modal-case6')
       }
   };
+
+  // function scrollOnClick(scrolltime) {
+  //   const links = document.getElementById("menu-list");
+
+  //   links.querySelectorAll("a").forEach(function (link) {
+  //     let divRef = link.getAttribute("href");
+  //     divRef = divRef.replace('#', '');
+
+  //     link.addEventListener("click", function(event) {
+  //       event.preventDefault();
+  //       let div = document.getElementById(divRef);
+
+  //       let documentPosition = window.pageYOffset;
+
+  //       let elementPosition = div.offsetTop;
+
+  //       let scrollHelper = elementPosition;
+
+  //       if (documentPosition < elementPosition) {
+  //         scrollHelper = elementPosition;
+  //         while (documentPosition < scrollHelper) {
+  //           (function() {
+  //             setTimeout(function() {
+  //               scrollHelper += 1;
+  //               window.scrollBy(0, 1);
+  //             }, 1 * scrolltime );
+  //           }());
+  //         }
+  //       }
+
+  //       if (documentPosition > elementPosition) {
+  //         scrollHelper = elementPosition;
+  //         while (documentPosition > scrollHelper) {
+  //           (function() {
+  //             setTimeout(function() {
+  //               scrollHelper -= 1;
+  //               window.scrollBy(0, -1);
+  //             }, 1 * scrolltime );
+  //           }());
+  //         }
+  //       }  
+  //     });
+  //   });
+  // }
+
+  // scrollOnClick(1);
 })();

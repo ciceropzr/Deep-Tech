@@ -61,6 +61,13 @@
 	--blend-color-5: transparent;
 }
 
+@media (max-width: 768px) {
+	.glitch-butterfly {
+		width: 90%;
+		height: 220px;
+	}
+}
+
 .glitch-butterfly .glitch__img {
 	position: absolute;
 	top: 0;
