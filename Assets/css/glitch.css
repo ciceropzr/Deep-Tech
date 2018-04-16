@@ -24,6 +24,10 @@
 }
 
 /* Glitch styles */
+.glitch--hide {
+	opacity: 0;
+}
+
 .glitch-background {
 	position: absolute;
 	top: 0;
@@ -51,6 +55,8 @@
 	width: 480px;
 	height: 270px;
 
+	transition: all .05s linear;
+
 	--blend-color-4: transparent;
 	--blend-color-5: transparent;
 }
@@ -69,12 +75,16 @@
 }
 
 .glitch-satellite {
-	position: relative;
-	width: 50%;
-	height: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	z-index: 1;
 
-	margin-top: -5%;
+	width: 50%;
+	height: 50%;
+	
+	transition: all .05s linear;
 
 	--blend-color-4: transparent;
 	--blend-color-5: transparent;
