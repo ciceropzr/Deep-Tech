@@ -15,4 +15,4 @@ setTimeout(() => {
 setTimeout(() => {
 	glitchSatellite.classList.add('glitch--hide');
 	glitchButterfly.classList.remove('glitch--hide');
-}, 2900)
+}, 3200)
