@@ -63,7 +63,7 @@
 
 @media (max-width: 768px) {
 	.glitch-butterfly {
-		width: 80%;
+		width: 100%;
 		height: 190px;
 	}
 }
@@ -79,6 +79,12 @@
 	background-size: cover;
 	transform: translate3d(0,0,0);
 	background-blend-mode: var(--blend-mode-1);
+}
+
+@media (max-width: 768px) {
+	.glitch-butterfly .glitch__img {
+		background-size: 83%;
+	}
 }
 
 .glitch-satellite {
@@ -108,6 +114,13 @@
 	background-size: cover;
 	transform: translate3d(0,0,0);
 	background-blend-mode: var(--blend-mode-1);
+}
+
+@media (max-width: 768px) {
+	.glitch-satellite {
+		width: 100%;
+		height: 190px;
+	}
 }
 
 .glitch-title,
