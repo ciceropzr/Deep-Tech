@@ -280,7 +280,7 @@ body {
 }
 
 .home-title {
-  font-family: Introdução;
+  font-family: Introdução, sans-serif;
   font-size: 7.9375rem;
   color: rgb(255, 0, 112);
   text-align: left;
@@ -335,7 +335,7 @@ body {
 }
 
 .belief-span {
-  font-family: SkyhookMonoRegular;
+  font-family: SkyhookMonoRegular, monospace;
   font-size: 1rem;
   position: absolute;
   top: 40px;
@@ -368,7 +368,7 @@ body {
 }
 
 .belief-title {
-  font-family: Introdução;
+  font-family: Introdução, sans-serif;
   font-size: 4.375rem;
   text-align: center;
   width: 35%;
@@ -425,7 +425,7 @@ body {
 }
 
 .cases-span {
-  font-family: SkyhookMonoRegular;
+  font-family: SkyhookMonoRegular, monospace;
   font-size: 1rem;
   position: absolute;
   top: 40px;
@@ -595,7 +595,7 @@ body {
 }
 
 .services-span {
-  font-family: SkyhookMonoRegular;
+  font-family: SkyhookMonoRegular, monospace;
   font-size: 1rem;
   position: absolute;
   top: 40px;
@@ -648,7 +648,7 @@ body {
 }
 
 .services-box-subtitle {
-  font-family: Introdução;
+  font-family: Introdução, sans-serif;
   font-size: 2rem;
   line-height: 32px;
   font-weight: 800;
