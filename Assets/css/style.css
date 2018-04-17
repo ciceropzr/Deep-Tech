@@ -648,19 +648,17 @@ body {
 }
 
 .services-box-background {
-  display: block;
-  width: 0px;
-  background-image: linear-gradient(transparent 65%, rgb(252, 241, 19) 0px);
+  width: 20px;
+  height: 30px;
+  background-image: linear-gradient(transparent 0%, rgb(252, 241, 19) 0px);
   font-size: 28px;
   font-weight: 600;
   transition: width .4s ease;
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin-top: -30px;
 }
 
-.services-box-background:hover {
-  width: 100px;
+.services-box-subtitle:hover + .services-box-background {
+  width: 100%;
 }
 
 
@@ -686,7 +684,7 @@ body {
 }
 
 .box-startupin {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .box-startupin-subtitle {
