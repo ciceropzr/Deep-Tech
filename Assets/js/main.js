@@ -151,6 +151,7 @@
     
     section4 = document.getElementById('services_box4');
     
+    
     if (window.pageYOffset < section1.offsetTop) {
       animate = document.querySelector('.services-box-animate');
       if (animate) {
@@ -162,35 +163,35 @@
        && window.pageYOffset <= section2.offsetTop) {
       animate = document.querySelector('.services-box-animate');
       if (animate) {
-        animate.classList.add('services-box-animate');
+        animate.classList.remove('services-box-animate');
       }
-      section1.querySelector('div').classList.remove('services-box-animate');
+      section1.querySelector('div').classList.add('services-box-animate');
     }
     
     if (window.pageYOffset >= section2.offsetTop
        && window.pageYOffset <= section3.offsetTop) {
       animate = document.querySelector('.services-box-animate');
       if (animate) {
-        animate.classList.add('services-box-animate');
+        animate.classList.remove('services-box-animate');
       }
-      section2.querySelector('div').classList.remove('services-box-animate');
+      section2.querySelector('div').classList.add('services-box-animate');
     }
     
     if (window.pageYOffset >= section3.offsetTop
        && window.pageYOffset <= section4.offsetTop) {
       animate = document.querySelector('.services-box-animate');
       if (animate) {
-        animate.classList.add('services-box-animate');
+        animate.classList.remove('services-box-animate');
       }
-      section3.querySelector('div').classList.remove('services-box-animate');
+      section3.querySelector('div').classList.add('services-box-animate');
     }
     
     if (window.pageYOffset >= section4.offsetTop) {
       animate = document.querySelector('.services-box-animate');
       if (animate) {
-        animate.classList.add('services-box-animate');
+        animate.classList.remove('services-box-animate');
       }
-      section4.querySelector('div').classList.remove('services-box-animate');
+      section4.querySelector('div').classList.add('services-box-animate');
     }
   });
 })();
