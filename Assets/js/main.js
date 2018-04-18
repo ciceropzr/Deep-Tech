@@ -202,4 +202,14 @@
       section4.querySelector('div').classList.add('animate');
     }
   });
+
+  function animateTitles() {
+    const belief = document.querySelector('.belief-span');
+    const cases = document.querySelector('.cases-span');
+    const services = document.querySelector('.services-span');
+
+    console.log(belief)
+    console.log(cases)
+    console.log(services)
+  }
 })();
