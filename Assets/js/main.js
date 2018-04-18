@@ -194,4 +194,61 @@
       section4.querySelector('div').classList.add('services-box-animate');
     }
   });
+
+  function animateTitles() {
+    let counter = 0;
+    const specialChars = ['$','%','#','@','&','(',')','=','*','/'];
+    const totalSpecialChars = specialChars.length;
+    const getRandom = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+    const belief = document.querySelector('.belief-span span');
+    const cases = document.querySelector('.cases-span span');
+    const services = document.querySelector('.services-span span');
+
+    generateLetters(belief)
+    generateLetters(cases)
+    generateLetters(services)
+
+    const beliefLetters = document.querySelectorAll('.belief-span .title__letter');
+    const casesLetters = document.querySelectorAll('.cases-span .title__letter');
+    const servicesLetters = document.querySelectorAll('.services-span .title__letter');
+    
+    function generateLetters (element) {
+      return element.innerHTML = element.innerHTML.split('').map(string => {
+        return `<span class="title__letter" data-letter="${string}">${string}</span>`
+      }).join('')
+    }
+
+    function writeLetters(letters) {
+      letters.forEach((letter, index) => {
+        let timeout = setTimeout(() => {
+          if (letter.innerHTML === ' ') {
+            letter.innerHTML = ' '
+          } else {
+            letter.innerHTML = specialChars[getRandom(0, totalSpecialChars - 1)]
+          }
+          
+          setTimeout(() => {
+            letter.innerHTML = letter.getAttribute('data-letter');
+          }, 100)
+        }, index * 200)
+      });
+    }
+
+    function loopLetters(letters, ms) {
+      setInterval(() => {
+        writeLetters(letters)
+      }, ms)
+    }
+
+    writeLetters(beliefLetters)
+    writeLetters(casesLetters)
+    writeLetters(servicesLetters)
+
+    loopLetters(beliefLetters, 4000)
+    loopLetters(casesLetters, 4000)
+    loopLetters(servicesLetters, 5000)
+  }
+
+  animateTitles();
 })();
