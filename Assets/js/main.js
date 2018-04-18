@@ -140,7 +140,7 @@
       }
   };
 
-  window.addEventListener('scroll', function(){
+  window.addEventListener('scroll', function( event  ){
     let section1, section2, section3, section4, animate;
     
     section1 = document.getElementById('services_box1');
@@ -150,56 +150,48 @@
     section3 = document.getElementById('services_box3');
     
     section4 = document.getElementById('services_box4');
-
-    animate = document.querySelector('.animate')
+    
     
     if (window.pageYOffset < section1.offsetTop) {
-      animate = document.querySelector('.animate');
+      animate = document.querySelector('.services-box-animate');
       if (animate) {
-        animate.classList.remove('animate');
+        animate.classList.remove('services-box-animate');
       }
     }
         
-    if (window.pageYOffset < section1.offsetTop) {
-      animate = document.querySelector('.animate');
-      if (animate) {
-        animate.classList.remove('animate');
-      }
-    }
-    
     if (window.pageYOffset >= section1.offsetTop
        && window.pageYOffset <= section2.offsetTop) {
-      animate = document.querySelector('.animate');
+      animate = document.querySelector('.services-box-animate');
       if (animate) {
-        animate.classList.remove('animate');
+        animate.classList.remove('services-box-animate');
       }
-      section1.querySelector('div').classList.add('animate');
+      section1.querySelector('div').classList.add('services-box-animate');
     }
     
     if (window.pageYOffset >= section2.offsetTop
        && window.pageYOffset <= section3.offsetTop) {
-      animate = document.querySelector('.animate');
+      animate = document.querySelector('.services-box-animate');
       if (animate) {
-        animate.classList.remove('animate');
+        animate.classList.remove('services-box-animate');
       }
-      section2.querySelector('div').classList.add('animate');
+      section2.querySelector('div').classList.add('services-box-animate');
     }
     
     if (window.pageYOffset >= section3.offsetTop
        && window.pageYOffset <= section4.offsetTop) {
-      animate = document.querySelector('.animate');
+      animate = document.querySelector('.services-box-animate');
       if (animate) {
-        animate.classList.remove('animate');
+        animate.classList.remove('services-box-animate');
       }
-      section3.querySelector('div').classList.add('animate');
+      section3.querySelector('div').classList.add('services-box-animate');
     }
     
     if (window.pageYOffset >= section4.offsetTop) {
-      animate = document.querySelector('.animate');
+      animate = document.querySelector('.services-box-animate');
       if (animate) {
-        animate.classList.remove('animate');
+        animate.classList.remove('services-box-animate');
       }
-      section4.querySelector('div').classList.add('animate');
+      section4.querySelector('div').classList.add('services-box-animate');
     }
   });
 
