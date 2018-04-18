@@ -639,7 +639,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 100px
+  margin-bottom: 130px
 }
 
 .services-box-span{
@@ -647,8 +647,9 @@ body {
   position: relative;
 }
 
-.services-box-background {
-  width: 20px;
+.services-box-span div {
+  display: block;
+  width: 0px;
   height: 30px;
   background-image: linear-gradient(transparent 0%, rgb(252, 241, 19) 0px);
   font-size: 28px;
@@ -657,7 +658,16 @@ body {
   margin-top: -30px;
 }
 
-.services-box-subtitle:hover + .services-box-background {
+.box-social-subtitle div {
+  height: 60px;
+  margin-top: -60px;
+}
+
+.services-box-subtitle:hover + div {
+  width: 100%;
+}
+
+.animate {
   width: 100%;
 }
 

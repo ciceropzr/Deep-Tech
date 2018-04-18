@@ -64,6 +64,11 @@
 @media (max-width: 768px) {
 	.glitch-butterfly {
 		width: 100%;
+		height: 360px;
+	}
+}
+@media (max-width: 425px) {
+	.glitch-butterfly {
 		height: 190px;
 	}
 }
@@ -83,7 +88,9 @@
 
 @media (max-width: 768px) {
 	.glitch-butterfly .glitch__img {
+		width: 95%;
 		background-size: 83%;
+		margin: auto;
 	}
 }
 
@@ -119,6 +126,17 @@
 @media (max-width: 768px) {
 	.glitch-satellite {
 		width: 100%;
+		height: 360px;
+	}
+
+	.glitch-satellite .glitch__img {
+		width: 95%;
+		margin: auto;
+	}
+}
+
+@media (max-width: 425px) {
+	.glitch-satellite {
 		height: 190px;
 	}
 }
