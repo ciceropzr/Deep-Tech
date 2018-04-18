@@ -623,7 +623,7 @@ body {
   align-self: center;
   width: 80%;
   font-weight: 600;
-  margin: 50px auto 75px auto;
+  margin: 20px auto 75px auto;
 }
 
 @media ( max-width: 768px) {
@@ -650,12 +650,12 @@ body {
 .services-box-span div {
   display: block;
   width: 0px;
-  height: 30px;
+  height: 25px;
   background-image: linear-gradient(transparent 0%, rgb(252, 241, 19) 0px);
   font-size: 28px;
   font-weight: 600;
   transition: width .4s ease;
-  margin-top: -30px;
+  margin-top: -27.5px;
 }
 
 .box-social-subtitle div {
@@ -667,7 +667,7 @@ body {
   width: 100%;
 }
 
-.services-box-animate {
+.animate {
   width: 100% !important;
 }
 
