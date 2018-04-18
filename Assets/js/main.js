@@ -142,6 +142,7 @@
 
   window.addEventListener('scroll', function(){
     let section1, section2, section3, section4, animate;
+    let section1Ofset, section2Ofset, section3Ofset, section4Ofset;
     
     section1 = document.getElementById('services_box1');
     
@@ -151,37 +152,21 @@
     
     section4 = document.getElementById('services_box4');
 
-    console.log(`Pagina: ${window.pageYOffset} Seção1: ${section1.getBoundingClientRect().top + window.pageYOfset}`);
-    console.log(`Pagina: ${window.pageYOffset} Seção2: ${window.scrollY}`);
-    console.log(`Pagina: ${window.pageYOffset} Seção3: ${window.scrollY}`);
-    console.log(`Pagina: ${window.pageYOffset} Seção4: ${window.scrollY}`);
-
-    if (window.pageYOffset > section1.getBoundingClientRect().top) {
-      section1.querySelector('.services-box-span div').classList.add('services-box-animate')
-    }
-
-    if (window.pageYOffset > section2.getBoundingClientRect().top) {
-      section2.querySelector('.services-box-span div').classList.add('services-box-animate')
-    }
-
-    if (window.pageYOffset > section3.getBoundingClientRect().top) {
-      section3.querySelector('.services-box-span div').classList.add('services-box-animate')
-    }
-
-    if (window.pageYOffset > section4.getBoundingClientRect().top) {
-      section4.querySelector('.services-box-span div').classList.add('services-box-animate')
-    }
+    section1Offset = (section1.parentNode.parentNode.parentNode.offsetTop + section1.offsetTop);
+    section2Offset = (section2.parentNode.parentNode.parentNode.offsetTop + section2.offsetTop);
+    section3Offset = (section3.parentNode.parentNode.parentNode.offsetTop + section3.offsetTop);
+    section4Offset = (section4.parentNode.parentNode.parentNode.offsetTop + section4.offsetTop);
 
     
-    /*if (window.pageYOffset < section1.offsetTop) {
+    if ((window.scrollY + 100) < section1Offset) {
       animate = document.querySelector('.services-box-animate');
       if (animate) {
         animate.classList.remove('services-box-animate');
       }
     }
         
-    if (window.pageYOffset >= section1.offsetTop
-       && window.pageYOffset <= section2.offsetTop) {
+    if ((window.scrollY + 100) >= section1Offset
+       && (window.scrollY + 100) <= section2Offset) {
       animate = document.querySelector('.services-box-animate');
       if (animate) {
         animate.classList.remove('services-box-animate');
@@ -189,8 +174,8 @@
       section1.querySelector('.services-box-span div').classList.add('services-box-animate');
     }
     
-    if (window.pageYOffset >= section2.offsetTop
-       && window.pageYOffset <= section3.offsetTop) {
+    if ((window.scrollY + 100) >= section2Offset
+       && (window.scrollY + 100) <= section3Offset) {
       animate = document.querySelector('.services-box-animate');
       if (animate) {
         animate.classList.remove('services-box-animate');
@@ -198,8 +183,8 @@
       section2.querySelector('.services-box-span div').classList.add('services-box-animate');
     }
     
-    if (window.pageYOffset >= section3.offsetTop
-       && window.pageYOffset <= section4.offsetTop) {
+    if ((window.scrollY + 100) >= section3Offset
+       && (window.scrollY + 100) <= section4Offset) {
       animate = document.querySelector('.services-box-animate');
       if (animate) {
         animate.classList.remove('services-box-animate');
@@ -207,13 +192,13 @@
       section3.querySelector('.services-box-span div').classList.add('services-box-animate');
     }
     
-    if (window.pageYOffset >= section4.offsetTop) {
+    if ((window.scrollY + 100) >= section4Offset) {
       animate = document.querySelector('.services-box-animate');
       if (animate) {
         animate.classList.remove('services-box-animate');
       }
       section4.querySelector('.services-box-span div').classList.add('services-box-animate');
-    }*/
+    }
   });
 
   function animateTitles() {
